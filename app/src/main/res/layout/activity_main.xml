@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id = "@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gosamrpg.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="개의 퀘스트를 달성하였습니다."
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="238dp">
+
+            <ImageView
+                android:id="@+id/main_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/main_body" />
+
+            <ImageView
+                android:id="@+id/jaranara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/jaranara" />
+
+            <ImageView
+                android:id="@+id/a_clothes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/a_clothes" />
+
+            <ImageView
+                android:id="@+id/b_clothes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/b_clothes" />
+
+            <ImageView
+                android:id="@+id/c_clothes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/c_clothes" />
+
+            <ImageView
+                android:id="@+id/d_clothes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/d_clothes" />
+
+            <ImageView
+                android:id="@+id/a_weapons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/a_weapons" />
+
+            <ImageView
+                android:id="@+id/b_weapons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/b_weapons" />
+
+            <ImageView
+                android:id="@+id/c_weapons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/c_weapons" />
+
+            <ImageView
+                android:id="@+id/d_weapons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/d_weapons" />
+
+            <ImageView
+                android:id="@+id/a_shield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/a_shields" />
+
+            <ImageView
+                android:id="@+id/b_shield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/b_shields" />
+
+            <ImageView
+                android:id="@+id/c_shield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/c_shields" />
+
+            <ImageView
+                android:id="@+id/d_shield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/d_shields" />
+
+            <ImageView
+                android:id="@+id/a_shoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/a_shoes" />
+
+            <ImageView
+                android:id="@+id/b_shoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/b_shoes" />
+
+            <ImageView
+                android:id="@+id/c_shoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/c_shoes" />
+
+            <ImageView
+                android:id="@+id/d_shoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/d_shoes" />
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/work_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@+id/progressBar2"
+            android:layout_alignRight="@+id/progressBar2"
+            android:layout_below="@+id/textView2"
+            android:layout_weight="1">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_add_black_24dp"
+        app:backgroundTint="@android:color/holo_red_light"
+        app:fabSize="auto"
+        app:useCompatPadding="true" />
+
+</RelativeLayout>
